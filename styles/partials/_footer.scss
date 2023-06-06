@@ -1,0 +1,107 @@
+@import 'colors';
+.footer {
+    width:100%;
+    height:fit-content;
+    background: $bandsite-black;
+    display:flex;
+    flex-direction:column;
+    color:$white;
+    @include tablet {
+      height:fit-content;
+    }
+    &__header{
+        font-size:24px;
+        margin-top:15px;
+        margin-left:10px;
+        @include tablet {
+          font-size: 36px;
+          display:flex;
+          justify-content: space-evenly;
+          width:45rem;
+          flex-direction: row;
+        }
+        @include desktop{
+          margin:40px;
+          font-weight:600;
+        }
+  }
+    &__socials{
+        display:flex;
+        width:140px;
+        justify-content: space-between;
+        margin-top:10px;
+        @include tablet {
+          margin-right:7.5rem;
+          img {
+            width:30px;
+            height:30px;
+          }
+        }
+        @include tablet {
+          position:relative;
+          left:20px;
+        }
+  }
+    &__logo {
+      display:none;
+      @include tablet {
+        display:block;
+      }
+      @include desktop {
+        position:relative;
+        left:700px;
+      }
+  }
+    &__info{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:flex-start;
+        @include tablet {
+          flex-direction:row;
+        }
+        @include desktop {
+          justify-content: left;
+        }
+  }
+    &__item{
+        display:flex;
+        flex-direction: column; 
+        justify-content: space-around;
+        margin:15px;
+        line-height:18px;
+        font-size: 13px;
+        font-weight:normal;
+        @include tablet {
+          font-size:16px;
+          line-height:25px;
+          height:15rem;
+        }
+        @include desktop{
+          width:14rem;
+          margin-left:5rem;
+        }
+        
+  }
+    &__name{
+  }
+    &__name--bold{
+        font-weight:600;
+  } 
+    &__address{
+        margin-top:10px;
+        margin-bottom:10px;
+  }
+    &__email{
+  }
+    &__logo--mobile {
+      margin-left:15px;
+      @include tablet {
+        display:none;
+      }
+    } 
+    &__copyright{
+        margin:10px;
+  
+  }
+}
