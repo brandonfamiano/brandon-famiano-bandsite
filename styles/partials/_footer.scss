@@ -17,7 +17,7 @@
         margin-top:15px;
         margin-left:10px;
         @include tablet {
-          font-size: 36px;
+          font-size: 2.25rem;
           display:flex; 
           margin-left: 1%;
           flex-direction: row;
@@ -28,19 +28,19 @@
   }
     &__socials{
         display:flex;
-        width:140px;
+        width:8.75rem;
         justify-content: space-between;
-        margin-top:10px;
+        margin-top:0.625rem;
         @include tablet {
           margin-right:7.5rem;
           img {
-            width:30px;
-            height:30px;
+            width:1.875rem;
+            height:1.875rem;
           }
         }
         @include tablet {
           position:relative;
-          left:20px;
+          left:1.25rem;
         }
   }
     &__logo {
@@ -50,7 +50,7 @@
       }
       @include desktop {
         position:relative;
-        left:700px;
+        left:43.75rem;
       }
   }
     &__info{
@@ -69,13 +69,13 @@
         display:flex;
         flex-direction: column; 
         justify-content: space-around;
-        margin:15px;
-        line-height:18px;
-        font-size: 13px;
+        margin:0.938rem;
+        line-height:1.125rem;
+        font-size: 0.813rem;
         font-weight:normal;
         @include tablet {
-          font-size:16px;
-          line-height:25px;
+          font-size:1rem;
+          line-height:1.5625rem;
           height:15rem;
         }
         @include desktop{
@@ -90,19 +90,19 @@
         font-weight:600;
   } 
     &__address{
-        margin-top:10px;
-        margin-bottom:10px;
+        margin-top:0.625rem;
+        margin-bottom:0.625rem;
   }
     &__email{
   }
     &__logo--mobile {
-      margin-left:15px;
+      margin-left:0.9375rem;
       @include tablet {
         display:none;
       }
     } 
     &__copyright{
-        margin:10px;
+        margin:0.625rem;
   
   }
 }
