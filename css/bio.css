@@ -13,7 +13,7 @@
           flex-direction: column;
   color: #FFFFFF;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -25,7 +25,7 @@
   margin-top: 15px;
   margin-left: 10px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__header {
     font-size: 36px;
     display: -webkit-box;
@@ -41,7 +41,7 @@
             flex-direction: row;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .footer__header {
     margin: 40px;
     font-weight: 600;
@@ -57,7 +57,7 @@
           justify-content: space-between;
   margin-top: 10px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__socials {
     margin-right: 7.5rem;
   }
@@ -66,7 +66,7 @@
     height: 30px;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__socials {
     position: relative;
     left: 20px;
@@ -75,12 +75,12 @@
 .footer__logo {
   display: none;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__logo {
     display: block;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .footer__logo {
     position: relative;
     left: 700px;
@@ -101,7 +101,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -109,7 +109,7 @@
             flex-direction: row;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .footer__info {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -131,14 +131,14 @@
   font-size: 13px;
   font-weight: normal;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__item {
     font-size: 16px;
     line-height: 25px;
     height: 15rem;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .footer__item {
     width: 14rem;
     margin-left: 5rem;
@@ -154,7 +154,7 @@
 .footer__logo--mobile {
   margin-left: 15px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__logo--mobile {
     display: none;
   }
@@ -178,7 +178,7 @@
           justify-content: space-between;
   background: #323232;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -195,13 +195,13 @@
   -ms-flex-item-align: center;
       align-self: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__header {
     margin-top: 0;
     margin-left: 15px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .nav__header {
     margin-left: 85px;
   }
@@ -224,7 +224,7 @@
   width: 100%;
   height: 75px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__select {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -247,7 +247,7 @@
   margin: 0;
   border-bottom: solid white 2px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__select--active {
     width: 6rem;
     border-bottom: solid white 3px;
@@ -262,13 +262,13 @@
   text-align: center;
   color: white;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__select--inactive {
     width: 6rem;
     padding-bottom: 1.5rem;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .nav__select--inactive:hover {
     width: 6rem;
     border-bottom: solid white 3px;
@@ -316,12 +316,12 @@ a {
   display: block;
   padding: 0;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .pageheader {
     height: 530px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .pageheader {
     height: 850px;
   }
@@ -336,12 +336,12 @@ a {
   left: 0;
   right: 0;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .pageheader__opacity {
     height: 530px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .pageheader__opacity {
     height: 850px;
   }
@@ -355,14 +355,14 @@ a {
   top: 150px;
   left: 10px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .pageheader__text {
     font-size: 60px;
     top: 175px;
     left: 30px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .pageheader__text {
     top: 350px;
     left: 75px;
@@ -384,9 +384,7 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: contain;
   padding-top: 30px;
 }
 .biography__header {
@@ -398,13 +396,13 @@ a {
   margin-left: 10px;
   margin-bottom: 5px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__header {
     margin: 20px;
     font-size: 36px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .biography__header {
     margin: 50px 0px 50px 75px;
   }
@@ -416,7 +414,7 @@ a {
   width: 90%;
   margin: 0 auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__image img {
     width: 80%;
   }
@@ -429,7 +427,7 @@ a {
   margin: 20px;
   line-height: 35px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__quote {
     width: 82.5%;
   }
@@ -438,7 +436,7 @@ a {
   font-size: 13px;
   font-weight: 600;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__quote--bold {
     font-size: 24px;
   }
@@ -448,7 +446,7 @@ a {
   font-size: 16px;
   font-weight: 600;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__quote--fontsize {
     font-size: 18px;
     margin-top: 2px;
@@ -465,13 +463,16 @@ a {
           flex-direction: column;
   text-align: justify;
   width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   line-height: 18px;
   display: flex;
   flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__description {
     width: 90%;
   }
@@ -479,13 +480,13 @@ a {
 .biography__descriptionheader {
   font-size: 14px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__descriptionheader {
     font-size: 24px;
     font-weight: bold;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .biography__descriptionheader {
     margin-left: 125px;
     margin-top: 35px;
@@ -500,8 +501,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: contain;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__paragraphs {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -516,8 +518,9 @@ a {
   font-size: 15px;
   color: #323232;
   margin-top: 20px;
+  height: inherit;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .biography__paragraph {
     font-size: 16px;
     height: 400px;
@@ -527,7 +530,7 @@ a {
     text-align: left;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .biography__paragraph {
     line-height: 35px;
     width: 35%;
@@ -549,14 +552,14 @@ a {
   margin-left: 10px;
   margin-bottom: 5px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .photo__header {
     font-size: 36px;
     margin-bottom: 30px;
     margin-top: 10px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .photo__header {
     margin-left: 65px;
   }
@@ -573,7 +576,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .photo__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -591,7 +594,7 @@ a {
     margin-left: 15px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .photo__container {
     margin-bottom: 20px;
   }
@@ -600,14 +603,14 @@ a {
   width: 87.5%;
   margin-bottom: 20px;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .photo__container img {
     width: 30%;
     margin-bottom: 0;
     margin: 10px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .photo__container img {
     margin: 20px;
   }

@@ -5,7 +5,7 @@
     background: $bandsite-black;
     display:flex;
     flex-direction:column;
-    color:$white;
+    color: $white ; 
     @include tablet {
       height:fit-content;
     }
