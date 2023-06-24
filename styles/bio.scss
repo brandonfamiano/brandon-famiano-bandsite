@@ -246,3 +246,21 @@ a {
         }
   }
 }
+.comment{
+    img{
+        width:25%;
+    }
+    &__container {
+        display:flex;
+        flex-direction: column;
+        li {
+            width:80%;
+            display:flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+            line-height: 2rem;
+
+        }
+
+    }
+}
