@@ -767,6 +767,22 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.comment h1 {
+  width: 90%;
+  text-align: left;
+  color: #323232;
+}
+@media (min-width: 768px) {
+  .comment h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment h1 {
+    font-size: 3rem;
+    margin-left: 6rem;
+  }
+}
 @media (min-width: 1280px) {
   .comment {
     width: 100%;
@@ -786,23 +802,6 @@ label {
 @media (min-width: 1280px) {
   .comment__form {
     width: 35%;
-  }
-}
-.comment__form h1 {
-  margin: 2rem;
-  text-align: left;
-  color: #323232;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .comment__form h1 {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .comment__form h1 {
-    font-size: 3rem;
-    margin-left: 6rem;
   }
 }
 .comment img {
