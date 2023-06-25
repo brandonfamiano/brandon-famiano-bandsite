@@ -1,6 +1,4 @@
 
-
-
 const commentArray = [
 {
     image:"",
@@ -21,23 +19,45 @@ const commentArray = [
     datePosted: "5 days ago"
 }
 ];
+var newDatePosted = "posted Now";
+var container = document.querySelector(".comment__container");
+var form = document.getElementById("form");
 
-let container = document.querySelector(".comment__container");
+function renderComments() {
+  container.innerHTML = '';
 
-commentArray.forEach((comment, index) =>{
-
+  commentArray.forEach((comment, index) => {
     let newComment = document.createElement('li');
     let image = document.createElement('img');
+    image.src = comment.image;
     let name = document.createElement('h3');
     name.innerText = comment.name;
-    let commentText = document.createElement('p');
-    commentText.innerText = comment.comment;
     let datePosted = document.createElement('h4');
     datePosted.innerText = comment.datePosted;
-    newComment.appendChild(image)
-    newComment.appendChild(name)
-    newComment.appendChild(datePosted)
-    newComment.appendChild(commentText)
-    container.appendChild(newComment);
-})
+    let commentText = document.createElement('p');
+    commentText.innerText = comment.comment;
+    
 
+    newComment.appendChild(image);
+    newComment.appendChild(name);
+    newComment.appendChild(datePosted);
+    newComment.appendChild(commentText);
+    container.appendChild(newComment);
+  });
+}
+
+submit.onclick = function(e) {
+  e.preventDefault();
+  let comment = {
+    image: document.getElementById("newimage").src="/assets/Images/Mohan-muruge.jpg",
+    name: document.getElementById("name").value,
+    datePosted: newDatePosted,
+    comment: document.getElementById("comment").value,
+    
+  };
+  commentArray.push(comment);
+
+  renderComments();
+  form.reset();
+};
+renderComments();
