@@ -17,14 +17,18 @@ const commentArray = [
 ];
 
 let container = document.querySelector(".comment__container");
+
 commentArray.forEach((comment, index) =>{
     let newComment = document.createElement('li');
-    let name = document.createTextNode(comment.name);
-    let commentText = document.createTextNode(comment.comment);
-    let datePosted = document.createTextNode(comment.datePosted);
+    let name = document.createElement('h3');
+    name.innerText = comment.name;
+    let commentText = document.createElement('p');
+    commentText.innerText = comment.comment;
+    let datePosted = document.createElement('h4');
+    datePosted.innerText = comment.datePosted;
     newComment.appendChild(name)
-    newComment.appendChild(commentText)
     newComment.appendChild(datePosted)
+    newComment.appendChild(commentText)
     container.appendChild(newComment);
 })
 

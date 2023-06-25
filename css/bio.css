@@ -631,12 +631,25 @@ a {
 }
 .comment__container li {
   width: 80%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
   list-style-type: none;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  text-align: left;
   line-height: 2rem;
+}
+.comment__container li h3 {
+  font-weight: 400;
+}
+.comment__container li h4 {
+  font-weight: 100;
+  color: #323232;
 }/*# sourceMappingURL=bio.css.map */

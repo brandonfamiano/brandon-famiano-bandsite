@@ -253,12 +253,27 @@ a {
     &__container {
         display:flex;
         flex-direction: column;
+        
         li {
             width:80%;
+            height:fit-content;
             display:flex;
+            flex-direction: column;
+            margin:2rem;
             list-style-type: none;
-            justify-content: space-evenly;
+            text-align: left;
             line-height: 2rem;
+            h3{
+                font-weight:400;
+            }
+            h4{
+                font-weight:100;
+                color:#323232;
+            }
+            p {
+
+            }
+            
 
         }
 
