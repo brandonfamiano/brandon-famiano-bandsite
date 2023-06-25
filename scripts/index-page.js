@@ -23,17 +23,17 @@ var newDatePosted = "posted Now";
 var container = document.querySelector(".comment__container");
 var form = document.getElementById("form");
 
+
 function renderComments() {
   container.innerHTML = '';
-
   commentArray.forEach((comment, index) => {
     let newComment = document.createElement('li');
     let image = document.createElement('img');
-    image.src = comment.image;
+    image.src ="/assets/images/blank.jpg"
     let name = document.createElement('h3');
     name.innerText = comment.name;
     let datePosted = document.createElement('h4');
-    datePosted.innerText = comment.datePosted;
+    datePosted.innerText = comment.datePosted + "\n";
     let commentText = document.createElement('p');
     commentText.innerText = comment.comment;
     
@@ -46,16 +46,36 @@ function renderComments() {
   });
 }
 
+
 submit.onclick = function(e) {
   e.preventDefault();
+
+  
+let errorbar1 = document.querySelector(".comment__form-name");
+let errorbar2 = document.querySelector(".comment__form-text");
+
+errorbar1.classList.remove("error");
+errorbar2.classList.remove("error");
+
+  let newName = document.getElementById("name").value;
+  let newCommentText = document.getElementById("comment").value;
+  if (!newName || !newCommentText) {
+    if (!errorbar1.value){
+    errorbar1.classList.add("error");
+    }
+    if (!errorbar2.value){
+      errorbar2.classList.add("error");
+    }
+    return;
+  }
   let comment = {
-    image: document.getElementById("newimage").src="/assets/Images/Mohan-muruge.jpg",
+    image: "/assets/images/Mohan-muruge",
     name: document.getElementById("name").value,
     datePosted: newDatePosted,
     comment: document.getElementById("comment").value,
     
   };
-  commentArray.push(comment);
+  commentArray.splice(0,0, comment);
 
   renderComments();
   form.reset();
