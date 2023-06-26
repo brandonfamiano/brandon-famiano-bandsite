@@ -29,7 +29,7 @@ function renderComments() {
   commentArray.forEach((comment, index) => {
     let newComment = document.createElement('li');
     let image = document.createElement('img');
-    image.src ="/assets/images/blank.jpg"
+    image.src ="assets/images/blank.jpg";
     let name = document.createElement('h3');
     name.innerText = comment.name;
     let datePosted = document.createElement('h4');
