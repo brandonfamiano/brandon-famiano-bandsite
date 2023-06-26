@@ -13,17 +13,20 @@
                 <a href="index.html"><img src="assets/logo/Logo-bandsite.svg" alt="bandsitelogo" width="120px"></a>
             </div>
             <div class="nav__select">
-                <div class="nav__select--active">
-                        <a href="#biography">Biography</a>
+                <a href="#biography">
+                    <div class="nav__select--active">
+                            Biography
                     </div>
-                <div class="nav__select--inactive">
-                    <a href="#shows">Shows</a>
-                </div>
+                </a>
+                <a href="pages/shows.html">
+                    <div class="nav__select--inactive">
+                        Shows
+                    </div>
+                </a>    
             </div>
         </div>
     </nav>
     <div class="pageheader">
-        
         <div class="pageheader__text">
             The Bees Knees
         </div>
@@ -94,6 +97,21 @@
             </div>
         </div>
     </section>
+    <div class="comment">
+        <h1>Join the Conversation</h1>
+        <div class="comment__form">
+            <img src="assets/Images/Mohan-muruge.jpg" id="newimage">
+            <form id="form">
+                <label>Name</label>
+                <input class="comment__form-name" type="text" id="name" placeholder="Enter your name">
+                 <label>Comment</label>
+                <textarea class="comment__form-text" type="text" id="comment" placeholder="Enter your Comment"></textarea>
+                <button class="button__class" id="submit" type="submit">COMMENT</button>
+            </form>
+        </div>
+        <ul class="comment__container">
+        </ul>
+    </div>    
     <div class="footer">
         <div class="footer__header">
             Get in Touch
@@ -147,5 +165,6 @@
         Copyright The Bees Knees © 2021 All Rights Reserved
     </div>
     </div>
+    <script src="/scripts/index-page.js"></script>
 </body>
 </html>
