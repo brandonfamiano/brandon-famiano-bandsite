@@ -1,4 +1,5 @@
-
+class Comment = {
+}
 const commentArray = [
 {
     image:"",
